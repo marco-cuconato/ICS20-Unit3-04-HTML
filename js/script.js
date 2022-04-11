@@ -7,10 +7,10 @@
 function enterclicked () {
   // input
   const fahrenheit = parseInt(document.getElementById('fahrenheit').value)
-  // process
   
-  const celsius =  (fahrenheit * 32) * 5/9
+  // process
+  const celsius =  (fahrenheit - 32) * 5/9
   
   // output
-  document.getElementById('celsius').innerHTML = '<p>celsius is: ' + celsius.toFixed(2) + ' °C</p>'
+  document.getElementById('celsius').innerHTML = '<p>celsius is: ' + celsius.toFixed(0) + ' °C</p>'
 }
